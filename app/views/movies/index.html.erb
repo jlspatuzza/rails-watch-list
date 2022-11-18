@@ -1,0 +1,17 @@
+<h1 class=text-center>List of all movies</h1>
+
+<ul>
+<% @movies.each do |movie| %>
+
+<div class="card" style="width: 18rem;" >
+  <img class="card-img-top" src="<%=movie.poster_url%>" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="text-center" class="card-title"><%= link_to movie.title, movie_path(movie) %></h5>
+
+  </div>
+</div>
+
+
+<% end  %>
+
+</ul>
