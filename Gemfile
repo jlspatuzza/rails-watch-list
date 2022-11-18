@@ -48,6 +48,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 
+gem "cloudinary"
+
 gem "dotenv-rails", groups: [:development, :test]
 
 # Use Sass to process CSS
