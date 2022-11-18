@@ -2,7 +2,7 @@
 
 <%# <%= link_to "add a movie", new_list_bookmark_path, class: "btn btn-primary" %>
 
-
+ <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 
 <% @list.movies.each do |movie|  %>
 
@@ -12,6 +12,8 @@
   <img class="card-img-top" src="<%=movie.poster_url%>" alt="Card image cap">
   <div class="card-body">
     <h5 class="text-center" class="card-title"><%= link_to movie.title, movie_path(movie) %></h5>
+
+
 <p><%= bookmark.comment  %>   </p>
   </div>
 </div>
