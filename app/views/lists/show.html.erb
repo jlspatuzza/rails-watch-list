@@ -2,7 +2,9 @@
 
 <%# <%= link_to "add a movie", new_list_bookmark_path, class: "btn btn-primary" %>
 
+<% if @list.photo.attached?%>
  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+ <%end%>
 
 <% @list.movies.each do |movie|  %>
 
